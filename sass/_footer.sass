@@ -1,0 +1,70 @@
+.footer
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+	&-items
+		display: grid
+		grid-template-columns: repeat(3, 2fr) 3fr
+		grid-column-gap: 25px
+	&-item
+		margin-top: 40px
+		&__title
+			margin: 0
+			margin-bottom: 30px
+			text-transform: uppercase
+			font-weight: 300
+			font-size: 24px
+	&-nav
+		&__item
+			margin-bottom: 12px
+			&:last-child
+				margin-bottom: 0
+		&__link
+			color: #232
+	&-form
+		&__input
+			display: block
+			cursor: text
+			width: 100%
+			padding: 30px 50px
+			text-transform: uppercase
+			font-size: 14px
+			text-align: center
+			border: 1px solid #d1d1d1
+			border-bottom: none
+		&__btn
+			display: block
+			width: 100%
+			background-color: $blue
+			color: #fff
+			text-transform: uppercase
+			font-size: 14px
+			padding: 18px 0
+			cursor: pointer
+	&-keep
+		margin-top: 35px
+		&__title
+			@extend .footer-item__title
+			font-weight: 700
+			margin: 0
+			margin-bottom: 15px
+	&-socials
+		display: flex
+		justify-content: space-between
+	&-bottom
+		margin-top: 45px
+		margin-bottom: 50px
+		padding: 25px 0
+		border-top: 1px solid #a1a1a1
+		border-bottom: 1px solid #a1a1a1
+		display: flex
+		justify-content: space-between
+	&-copy, &-author
+		font-size: 14px
+	&-copy
+		font-weight: 700
+	&-author
+		a
+			color: $pink
+			font-weight: 700

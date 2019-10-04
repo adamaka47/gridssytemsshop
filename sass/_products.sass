@@ -1,0 +1,63 @@
+.products
+	margin-bottom: 40px
+	&__title
+		color: $blue
+		font-weight: 300
+		margin: 0
+		padding-bottom: 10px
+		border-bottom: 1px solid #b9b9b9
+	&-items
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&-item
+		border: 1px solid #dddddd
+		margin-top: 30px
+		margin-right: 10px
+		&:last-child
+			margin-right: 0
+		&-new
+			.products-item__new
+				@extend .products-item__sale
+				background-color: $blue !important
+
+		&__img
+			position: relative
+		&__sale
+			position: absolute
+			top: 15px
+			left: 0px
+			background-color: $pink
+			color: #fff
+			font-size: 14px
+			padding: 12px 0
+			width: 80px
+			text-align: center
+		&__title
+			margin: 0
+			font-size: 18px
+			margin-bottom: 4px
+		&__text
+			padding: 14px
+		&__subtitle
+			margin: 0
+			font-size: 13px
+			color: $pink
+			margin-bottom: 10px
+	&-footer
+		border-top: 1px solid #ddd
+		border-bottom: 1px solid #ddd
+		display: flex
+		button
+			cursor: pointer
+			padding: 17px 22px
+			background-color: #fff
+			border-right: 1px solid #ddd
+		&__price
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-grow: 1
+			background-color: $pink
+			color: #fff
+		

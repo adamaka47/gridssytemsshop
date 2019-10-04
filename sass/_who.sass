@@ -1,0 +1,44 @@
+.who
+	border-bottom: 1px solid #a1a1a1
+	&__title
+		@extend .products__title
+		margin-bottom: 25px
+	&__text
+		margin: 0
+		font-size: 16px
+		line-height: 1.6
+		color: #444
+		margin-bottom: 35px
+	&-items
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&-item
+		padding: 40px
+		display: flex
+		align-items: center
+		flex-basis: 370px
+		margin-bottom: 30px
+		&:hover .who-item__descr
+			color: #fea100
+		img
+			margin-right: 20px
+		&__descr
+			font-size: 30px
+			color: #fff
+		&-one
+			background-color: #434343
+		&-two
+			background-color: $blue
+		&-three
+			background-color: $pink
+	&__btn
+		display: block
+		margin: auto
+		background-color: $blue
+		color: #fff
+		width: 650px
+		text-align: center
+		padding: 17px 0
+		font-size: 28px
+		margin-bottom: 30px

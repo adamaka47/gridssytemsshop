@@ -1,0 +1,117 @@
+.header	
+	padding-top: 10px
+	&-top
+		display: flex
+		justify-content: space-between
+		align-items: center
+		background-color: #f2f2f2
+		margin-bottom: 15px
+		nav
+			
+		&__logo
+			background-color: #fff
+			padding-right: 20px
+	&-up
+		display: flex
+		list-style-type: none
+		margin: 0
+		padding: 0
+		justify-content: flex-end
+		margin-bottom: 10px
+		&__item
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
+		&__link
+			color: #333
+			font-size: 16px
+			letter-spacing: 0.5px
+			transition: color 0.15s
+			&:hover
+				text-decoration: underline
+	&-down
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		justify-content: center
+		padding: 0
+		margin: 0
+		list-style-type: none
+		
+		&__item
+			margin-right: 5px
+			&:last-child
+				margin-right: 0
+		&__link
+			min-height: 106px
+			min-width: 116px
+			text-align: center
+			color: #fff
+			letter-spacing: 0.8px
+			display: flex
+			align-items: center
+			justify-content: center
+			transition: opacity 0.25s
+			&:hover
+				opacity: 0.85
+			img
+				display: inline-block
+				margin-left: 10px
+	&-category
+		padding: 0
+		margin: 0
+		list-style-type: none
+		display: flex
+		justify-content: center
+		background-color: $blue
+		&__item
+			position: relative
+			&:hover .header-category__dialog
+				display: block
+		&__link
+			padding: 27px 31px
+			color: #fff
+			letter-spacing: 0.4px
+			transition: all 0.25s
+			&:hover
+				background-color: #fff
+				color: $pink
+		&__dialog
+			position: absolute
+			z-index: 5
+			left: 0
+			padding-top: 10px
+			background-color: rgba(#fff, 0.8)
+			min-width: 260px
+			display: none
+		&__about
+			margin-left: 12px
+		&__block
+			display: flex
+			align-items: center
+			justify-content: space-between
+			padding: 15px
+			background-color: rgba(#f2f2f2, 0.7)
+			border-bottom: 1px solid #a1a1a1
+			&:last-child
+				border-bottom: none
+		&__title
+			margin: 0
+			color: $pink
+			letter-spacing: 0.4px
+			margin-bottom: 2px
+			font-size: 14px
+		&__text
+			margin: 0
+			font-size: 14px
+			margin-bottom: 2px
+		&__btn
+			background-color: $blue
+			color: #fff
+			font-size: 12px
+			border: none
+			padding: 5px 27px
+			margin-top: 1px
+			cursor: pointer
+			&:hover
+				opacity: 0.87

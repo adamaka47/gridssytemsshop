@@ -1,0 +1,208 @@
+.first
+	margin-top: 17px
+	margin-bottom: 25px
+	&-grid
+		display: grid
+		grid-gap: 5px
+		grid-template-columns: repeat(5, minmax(150px, 1fr))
+		grid-template-rows: repeat(10, minmax(120px, 1fr))
+		&__about
+			background: rgba(#362a4f, 0.8)
+			padding: 15px 20px
+			width: 350px
+			position: absolute
+			bottom: 60px
+		&__title
+			font-size: 48px
+			margin: 0
+			color: $pink
+			text-transform: uppercase
+		&__descr
+			color: #fff
+			margin: 0
+			text-transform: uppercase
+			font-size: 13px
+			margin-top: 0px
+		&__text
+			background-color: $pink
+			color: #fff
+			font-size: 16px
+			padding: 12px
+			text-transform: uppercase
+			width: 350px
+			position: absolute
+			bottom: 16px
+		&__item
+			position: relative
+			&-a
+				grid-column: span 3
+				grid-row: 1 / 6
+				background: url('../img/wearmen.jpg') center/cover no-repeat
+				position: relative
+				z-index: 2
+				&::after
+					content: ''
+					width: 100%
+					height: 100%
+					position: absolute
+					background: #002266
+					top: 0
+					left: 0
+					opacity: 0.25
+					z-index: -1
+			&-b
+				grid-column: span 2
+				grid-row: 1 / 4
+				background: url('../img/wearwomen.jpg') center/cover no-repeat
+				position: relative
+				z-index: 2
+				&::after
+					content: ''
+					width: 100%
+					height: 100%
+					position: absolute
+					background: #002266
+					top: 0
+					left: 0
+					opacity: 0.25
+					z-index: -1
+				.first-grid__about
+					bottom: 8px
+				.first-grid__title
+					font-size: 32px
+			&-c
+				grid-row:  span 2
+				grid-column: span 2
+				background: url('../img/wearbaby.jpg') center/cover no-repeat
+				position: relative
+				z-index: 2
+				&::after
+					content: ''
+					width: 100%
+					height: 100%
+					position: absolute
+					background: #111
+					top: 0
+					left: 0
+					opacity: 0.5
+					z-index: -1
+				.buttons
+					position: absolute
+					bottom: 30px
+					right: 0px
+					display: flex
+					min-height: 55px
+					button
+						border: none
+						padding: 0 14px
+						cursor: pointer
+			&-d
+				display: flex
+				justify-content: center
+				align-items: center
+				grid-row: span 2
+				grid-column: span 3
+				background-color: $pink
+				padding: 51px 57px
+			&-e
+				grid-row: span 3
+				grid-column: 1 / 4
+				background: url('../img/crafts.jpg') center/cover no-repeat
+				position: relative
+				z-index: 2
+				&::after
+					content: ''
+					width: 100%
+					height: 100%
+					position: absolute
+					background: gold
+					top: 0
+					left: 0
+					opacity: 0.2
+					z-index: -1
+
+			&-f
+				grid-column: 4 / 6
+				grid-row: 6 / 11
+				background: url('../img/jew.jpg') center/cover no-repeat
+				position: relative
+				z-index: 2
+				overflow: hidden
+				&::after
+					content: ''
+					width: 100%
+					height: 100%
+					position: absolute
+					background: #111
+					top: 0
+					left: 0
+					opacity: 0.5
+					z-index: -1
+				.first-grid__about
+					right: -123px
+					bottom: 112px
+					transform: rotate(-90deg)
+					font-size: 64px
+					text-transform: uppercase
+					color: #fff
+					padding-right: 40px
+					padding-left: 40px
+
+
+		&__baby
+			background-color: $blue
+			display: flex
+			align-items: center
+			padding: 0 12px
+			color: #fff
+			letter-spacing: 0.7px
+		&__present
+			background-color: darken($blue, 5)
+		&__cart
+			background-color: $pink
+		&__price
+			background-color: #333
+			padding: 0 12px
+			color: #fff
+			font-weight: 700
+			display: flex
+			align-items: center
+		&__form
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&__input
+			margin-right: 20px
+			width: 480px
+			padding: 30px 25px
+			border: none
+			font-size: 20px
+		&__search
+			border: none
+			background-color: transparent
+			cursor: pointer
+		&__block
+			position: absolute
+			bottom: 0
+			right: 0
+			display: flex
+			button
+				padding: 0 18px
+				cursor: pointer
+		&__crafts
+			background: rgba(#362a4f, 0.8)
+			font-size: 30px
+			text-transform: uppercase
+			font-weight: 300
+			color: #fff
+			margin: 0
+			padding: 18px 0
+			width: 200px
+			text-align: center
+		&__jew
+			margin: 0
+			font-weight: 300
+
+
+		
+
